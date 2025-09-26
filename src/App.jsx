@@ -91,7 +91,7 @@ function Login({onLogin,dashboard}){
 // chanaging and rendering pages
 
 function App(){
-    const [pages,setPages] = useState("dashboard");
+    const [pages,setPages] = useState("register");
     return(
         <>
         {pages === "register" && (<Register onRegister={()=> setPages("login")}/>)}
